@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af7adbd1-15b0-4350-b573-d547ad80193b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,13 +34,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="575">
               <caret line="23" column="34" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="34" />
               <folding>
                 <element signature="e#40#74#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+              <folding>
+                <element signature="e#30#70#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,8 +91,8 @@
       <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/users/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="6" column="117" selection-start-line="6" selection-start-column="117" selection-end-line="6" selection-end-column="117" />
+            <state relative-caret-position="200">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
               <folding>
                 <element signature="e#784#807#0#HTML" expanded="true" />
               </folding>
@@ -107,15 +117,6 @@
               <folding>
                 <element signature="e#45#81#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmailVerified.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Listeners/EmailVerified.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -153,7 +154,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/storage/logs/laravel-2019-05-28.log" />
-        <option value="$PROJECT_DIR$/app/Models/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/EnsureEmailIsVerified.php" />
         <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
@@ -161,13 +161,14 @@
         <option value="$PROJECT_DIR$/app/Listeners/EmailVerified.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/resources/views/users/show.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_31_175057_add_avatar_and_introduction_to_users_table.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/resources/views/shared/_error.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/users/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" />
+        <option value="$PROJECT_DIR$/resources/views/users/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/User.php" />
       </list>
     </option>
   </component>
@@ -325,6 +326,12 @@
             <path>
               <item name="laravel-two" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-two" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="laravel-two" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-two" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -332,13 +339,6 @@
               <item name="laravel-two" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laravel-two" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-two" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -382,15 +382,15 @@
       <workItem from="1559034472263" duration="49000" />
       <workItem from="1559034533358" duration="4892000" />
       <workItem from="1559114349761" duration="5020000" />
-      <workItem from="1559284426427" duration="9243000" />
+      <workItem from="1559284426427" duration="9443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23695000" />
+    <option name="totallyTimeSpent" value="23895000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="289" width="1890" height="930" extended-state="0" />
+    <frame x="234" y="304" width="1890" height="930" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -692,16 +692,6 @@
     <entry file="file://$PROJECT_DIR$/storage/logs/laravel-2019-05-28.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding>
-            <element signature="e#30#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/EventServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
@@ -737,16 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="38" column="22" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/users/show.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="6" column="117" selection-start-line="6" selection-start-column="117" selection-end-line="6" selection-end-column="117" />
-          <folding>
-            <element signature="e#784#807#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -788,12 +768,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/users/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding>
+            <element signature="e#784#807#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="575">
           <caret line="23" column="34" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="34" />
           <folding>
             <element signature="e#40#74#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="e#30#70#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

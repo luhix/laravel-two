@@ -24,5 +24,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+       \Carbon\Carbon::setLocale('zh'); //时间的转换
     }
 }
