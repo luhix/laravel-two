@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af7adbd1-15b0-4350-b573-d547ad80193b" name="Default" comment="" />
+    <list default="true" id="af7adbd1-15b0-4350-b573-d547ad80193b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +58,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2019_06_01_105830_seed_categories_data.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2019_06_01_112322_create_topics_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_01_112322_create_topics_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-75" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2019_06_01_105830_seed_categories_data.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_01_105830_seed_categories_data.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="325">
@@ -78,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -88,15 +100,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
               <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -152,7 +155,6 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_05_31_175057_add_avatar_and_introduction_to_users_table.php" />
         <option value="$PROJECT_DIR$/resources/views/shared/_error.blade.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Models/User.php" />
         <option value="$PROJECT_DIR$/resources/views/users/edit.blade.php" />
         <option value="$PROJECT_DIR$/public/uploads/images/avatars/.gitignore" />
@@ -167,6 +169,7 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_06_01_105114_create_categories_table.php" />
         <option value="$PROJECT_DIR$/app/Models/Category.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_01_105830_seed_categories_data.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -285,7 +288,7 @@
       <path value="$PROJECT_DIR$/vendor/summerblue/generator" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="149" />
     <option name="y" value="99" />
     <option name="width" value="1890" />
@@ -313,13 +316,7 @@
               <item name="laravel-two" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-two" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Handlers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="laravel-two" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-two" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="laravel-two" type="b2602c69:ProjectViewProjectNode" />
@@ -405,12 +402,12 @@
       <workItem from="1559034533358" duration="4892000" />
       <workItem from="1559114349761" duration="5020000" />
       <workItem from="1559284426427" duration="10354000" />
-      <workItem from="1559353161429" duration="4626000" />
+      <workItem from="1559353161429" duration="5518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29432000" />
+    <option name="totallyTimeSpent" value="30324000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="149" y="99" width="1890" height="924" extended-state="1" />
@@ -478,13 +475,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/_header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/_footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -698,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/uploads/images/avatars/201906/01/9_1559354302_5fTPOsUdlY.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -787,7 +770,7 @@
     <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -808,13 +791,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_01_105830_seed_categories_data.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -823,6 +799,25 @@
             <element signature="e#7#45#0#PHP" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_01_112322_create_topics_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75" />
       </provider>
     </entry>
   </component>
