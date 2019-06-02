@@ -1,47 +1,41 @@
-/**
- * simple-uploader v2.0.8
- * https://github.com/mycolorway/simple-uploader
- *
- * Copyright Mycolorway Design
- * Released under the MIT license
- * https://github.com/mycolorway/simple-uploader/license.html
- *
- * Date: 2016-07-29
- */
-;(function(root, factory) {
-  if (typeof module === 'object' && module.exports) {
-    module.exports = factory(require('jquery'),require('simple-module'));
+(function (root, factory) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD. Register as an anonymous module unless amdModuleId is set
+    define('simple-uploader', ["jquery","simple-module"], function ($, SimpleModule) {
+      return (root['uploader'] = factory($, SimpleModule));
+    });
+  } else if (typeof exports === 'object') {
+    // Node. Does not work with strict CommonJS, but
+    // only CommonJS-like environments that support module.exports,
+    // like Node.
+    module.exports = factory(require("jquery"),require("simple-module"));
   } else {
-    root.SimpleUploader = factory(root.jQuery,root.SimpleUploader);
+    root.simple = root.simple || {};
+    root.simple['uploader'] = factory(jQuery,SimpleModule);
   }
-}(this, function ($,SimpleUploader) {
-var define, module, exports;
-var b = require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"uploader":[function(require,module,exports){
-var Uploader,
+}(this, function ($, SimpleModule) {
+
+var Uploader, uploader,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
 
 Uploader = (function(superClass) {
   extend(Uploader, superClass);
 
+  function Uploader() {
+    return Uploader.__super__.constructor.apply(this, arguments);
+  }
+
   Uploader.count = 0;
 
-  Uploader.opts = {
+  Uploader.prototype.opts = {
     url: '',
     params: null,
     fileKey: 'upload_file',
-    connectionCount: 3,
-    locales: null
+    connectionCount: 3
   };
 
-  Uploader.locales = {
-    leaveConfirm: 'Are you sure you want to leave?'
-  };
-
-  function Uploader(opts) {
-    Uploader.__super__.constructor.apply(this, arguments);
-    this.opts = $.extend({}, Uploader.opts, opts);
-    this._locales = $.extend({}, Uploader.locales, this.opts.locales);
+  Uploader.prototype._init = function() {
     this.files = [];
     this.queue = [];
     this.id = ++Uploader.count;
@@ -50,21 +44,21 @@ Uploader = (function(superClass) {
         _this.files.splice($.inArray(file, _this.files), 1);
         if (_this.queue.length > 0 && _this.files.length < _this.opts.connectionCount) {
           return _this.upload(_this.queue.shift());
-        } else if (_this.files.length === 0) {
+        } else {
           return _this.uploading = false;
         }
       };
     })(this));
-    $(window).on('beforeunload.uploader-' + this.id, (function(_this) {
+    return $(window).on('beforeunload.uploader-' + this.id, (function(_this) {
       return function(e) {
         if (!_this.uploading) {
           return;
         }
-        e.originalEvent.returnValue = _this._locales.leaveConfirm;
-        return _this._locales.leaveConfirm;
+        e.originalEvent.returnValue = _this._t('leaveConfirm');
+        return _this._t('leaveConfirm');
       };
     })(this));
-  }
+  };
 
   Uploader.prototype.generateId = (function() {
     var id;
@@ -104,7 +98,7 @@ Uploader = (function(superClass) {
       this.queue.push(file);
       return;
     }
-    if (this.trigger('beforeupload', [file]) === false) {
+    if (this.triggerHandler('beforeupload', [file]) === false) {
       return;
     }
     this.files.push(file);
@@ -246,13 +240,22 @@ Uploader = (function(superClass) {
     return $(document).off('.uploader-' + this.id);
   };
 
+  Uploader.i18n = {
+    'zh-CN': {
+      leaveConfirm: '正在上传文件，如果离开上传会自动取消'
+    }
+  };
+
+  Uploader.locale = 'zh-CN';
+
   return Uploader;
 
 })(SimpleModule);
 
-module.exports = Uploader;
+uploader = function(opts) {
+  return new Uploader(opts);
+};
 
-},{}]},{},[]);
+return uploader;
 
-return b('uploader');
 }));
