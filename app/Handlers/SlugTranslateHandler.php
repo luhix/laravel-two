@@ -41,6 +41,8 @@ class SlugTranslateHandler
         // 发送 HTTP Get 请求
         $response = $http->get($api.$query);
         $result = json_decode($response->getBody(), true);
+        
+        
         /**
         获取结果，如果请求成功，dd($result) 结果如下：
         array:3 [▼

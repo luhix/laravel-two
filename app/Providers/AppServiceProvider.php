@@ -25,5 +25,6 @@ class AppServiceProvider extends ServiceProvider
     {
         //
        \Carbon\Carbon::setLocale('zh'); //时间的转换
+        \App\Models\Topic::observe(\App\Observers\TopicObserver::class);  //注册观察者服务
     }
 }
