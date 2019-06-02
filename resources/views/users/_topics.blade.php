@@ -7,10 +7,10 @@
                     {{ $topic->title }}
                 </a>
                 <span class="meta float-right text-secondary">
-          {{ $topic->reply_count }} 回复
-          <span> ⋅ </span>
+                        {{ $topic->reply_count }} 回复
+                        <span> ⋅ </span>
                     {{ $topic->created_at->diffForHumans() }}
-        </span>
+                </span>
             </li>
         @endforeach
     </ul>
